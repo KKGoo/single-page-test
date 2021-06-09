@@ -1,4 +1,5 @@
 import React from 'react';
+import "./styles/global.css"
 import logo from './logo.svg';
 import LogIn from './pages/login'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
