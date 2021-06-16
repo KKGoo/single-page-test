@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/login.css"
+
 
 const LogIn = () => {
   return (
@@ -22,7 +25,7 @@ const LogIn = () => {
           </div>
           <div className="Form__buttons">
             <button className="Form__button">Sign in</button>
-            <a href="">Sign up</a>
+            <Link to="/register">Sign up</Link> 
           </div>
         </form>
         <div className="backgrounds">

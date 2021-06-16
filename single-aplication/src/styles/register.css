@@ -1,0 +1,53 @@
+    /* register */
+    .Register{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height:100vh
+    }
+    
+    .Register__container{
+        background-color: white;
+        display: grid;
+        width:90vw;
+        height:90vh;
+        max-width: 1000px;
+        max-height: 600px;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 10px;
+    }
+    
+    .backgrounds-register{
+        color: white;
+        padding: 30px 50px;
+        background-image: url(../assets/bg_bggenerator_com\ \(1\).jpg) ;
+        border-radius: 10px 0px 0px 10px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: stretch; */
+        justify-content: flex-start;
+    }
+    .backgrounds-register li {
+        margin: 0;
+        font-size: 20px;
+        margin: 0px 10px 40px;
+        font-weight: bold;
+    }
+    @media (max-width: 768px) {
+        .Register__container{
+            grid-template-columns: 1fr;
+            grid-template-rows: [inicio] 217px [fila1] auto [final];
+            max-height: 1000px;
+        }
+        .backgrounds-register{
+            grid-row: inicio/fila1;
+        padding: 20px;
+
+        border-radius: 10px 10px 0px 0px;
+        }
+        .backgrounds-register li{
+            font-size:16px;
+        margin: 20px 20px;
+
+        }
+    }
